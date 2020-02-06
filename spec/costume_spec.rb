@@ -3,9 +3,7 @@ require_relative 'spec_helper'
 describe "Costume" do
 
   it "has a name" do
-    hot_dog = Costume.create(
-      name: "Unisex Adult Hot Dog Costume"
-    )
+    hot_dog = Costume.create(name: "Unisex Adult Hot Dog Costume")
     expect(Costume.find_by(name: "Unisex Adult Hot Dog Costume")).to eq(hot_dog)
   end
 
